@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/7e0c38e4b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="file d-flex ">
+        <!-- Start sidebar -->
+        <div class="sidebar bg-white p-20 po-rela mb-10">
+            <h3 class="mt-0 txt-c po-rela">ABO EISA</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex alien-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-column fa-fw"></i>
+                        <span class="hide-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex alien-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gears fa-fw"></i>
+
+                        <span class="hide-text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex alien-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span class="hide-text">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex alien-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user-tie fa-fw"></i>
+                        <span class="hide-text">Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End sidebar -->
+        <!-- Start content -->
+        <div class="content mb-10">
+            <!-- Start head -->
+            <div class="head bg-wight p-20 between-flex">
+                <div class="search po-rela ">
+                    <input class="p-10 " type="search" placeholder="Search">
+                </div>
+                <div class="icons po-rela  d-flex alien-center ">
+                    <span class="notification po-rela ">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.png">
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="po-rela">Dashboard</h1>
+            <!-- Start wrapper -->
+            <div class="wrapper d-grid gap-20">
+                <!-- Start welcome -->
+                <div class="welcome bg-white rad-10 d-block-mobile txt-c-mobile">
+                    <div class="intro p-20 d-flex space-between bg-eee">
+                        <div>
+                            <h2 class="m-0">Welcome</h2>
+                            <p class="c-gray mt-5"> Abo-Eisa </p>
+                        </div>
+                        <div class="d-flex j-c"><img class="w-70 hide-mobile" src="./imgs/welcome.png"></div>
+                    </div>
+                    <img src="./imgs/avatar.png" alt="" class="avatar">
+
+                    <div class="body txt-c d-flex p-20 mt-20 mb-20 d-block-mobile">
+                        <div>Abdelrahman Eisa<span class="d-block fs-14 c-gray mt-10">Full stack developer</span></div>
+                        <div>6<span class="d-block fs-14 c-gray mt-10">projects</span></div>
+                    </div>
+                    <a href="profile.html" class="visit d-block  fs-14  c-white w-fit btn-shape">Tap to
+                        visit
+                        profile</a>
+                </div>
+                <!-- End welcome -->
+                <!-- Start Quick draft -->
+                <div class="quick-draft p-20 rad-10 bg-white">
+                    <h2 class="mt-0 mb-10 ">Quick Draft</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15">Write draft for your ideas</p>
+                    <form action="">
+                        <input class="d-block rad-6 bg-eee bor-none mb-20 p-10 w-full" type="text" placeholder="Title">
+                        <textarea class="d-block rad-6 bg-eee bor-none mb-20 p-10 w-full " placeholder="Your thoughts"
+                            rows="7"></textarea>
+                        <input class="save d-block  w-fit c-white bor-none fs-14 btn-shape" type="submit"
+                            value=" Save ">
+                    </form>
+                </div>
+                <!-- End Quick draft -->
+                <!-- Start targets -->
+                <div class="targets p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Target / year</h2>
+                    <div class="target-row mb-20 blue d-flex alien-center ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="details ">
+                            <span class="fs-14 c-gray">Planed</span>
+                            <span class="percentage d-block mt-5 mb-10 fw-bold">30 project</span>
+                            <div class="progress po-rela ">
+                                <!-- دي اتعمل تنسيقها هنا عشان المفروض انها هتتبرمج بالجافا اسكربت بحيث تكبر وتصغر برمجيا حسب الرقم  -->
+                                <span class="bg-blue blue" style="width:100%">
+                                    <span class="bg-blue">100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-row mb-20 orange d-flex alien-center ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="details ">
+                            <span class="fs-14 c-gray">Projects</span>
+                            <span class="percentage d-block mt-5 mb-10 fw-bold">20</span>
+                            <div class="progress po-rela ">
+                                <!-- دي اتعمل تنسيقها هنا عشان المفروض انها هتتبرمج بالجافا اسكربت بحيث تكبر وتصغر برمجيا حسب الرقم  -->
+                                <span class="bg-orange orange" style="width:67%">
+                                    <span class="bg-orange">67%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-row mb-20 green d-flex alien-center ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-dollar-sign fa-lg "></i>
+                        </div>
+                        <div class="details ">
+                            <span class="fs-14 c-gray">Revenue</span>
+                            <span class="percentage d-block mt-5 mb-10 fw-bold blue">$50,000</span>
+                            <div class="progress po-rela ">
+                                <!-- دي اتعمل تنسيقها هنا عشان المفروض انها هتتبرمج بالجافا اسكربت بحيث تكبر وتصغر برمجيا حسب الرقم  -->
+                                <span class="bg-green green" style="width:80%">
+                                    <span class="bg-green">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-row mb-20 red d-flex alien-center ">
+                        <div class="icon center-flex ">
+                            <i class="fa-solid fa-arrow-trend-down"></i>
+                        </div>
+                        <div class="details ">
+                            <span class="fs-14 c-gray">Loss</span>
+                            <span class="percentage d-block mt-5 mb-10 fw-bold fs-15">$1500</span>
+                            <div class="progress po-rela ">
+                                <!-- دي اتعمل تنسيقها هنا عشان المفروض انها هتتبرمج بالجافا اسكربت بحيث تكبر وتصغر برمجيا حسب الرقم  -->
+                                <span class="bg-red red" style="width:20%">
+                                    <span class="bg-red">20%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End targets -->
+                <!-- Start Tickits Statistics -->
+                <div class="tickts p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Tickits Statistics</h2>
+                    <p class="mt-0 mb-20 c-gray fs-15">Every thing about tickets</p>
+                    <div class=" container d-flex txt-c f-wrap gap-20">
+                        <div class="box p-20 rad-10 fs-13 c-gray">
+                            <i class="fa-solid fa-clipboard-list fa-2x mb-10 c-orange"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">2500</span>
+                            Total
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-gray">
+                            <i class="fa-solid fa-triangle-exclamation fa-2x mb-10 c-red"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">700</span>
+                            Pending
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-gray">
+                            <i class="fa-regular fa-circle-check  fa-2x mb-10 c-green"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">950</span>
+                            Done
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-gray">
+                            <i class="fa-solid fa-hourglass-half fa-2x mb-10 c-blue"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">850</span>
+                            In progress
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tickits Statistics -->
+                <!-- start tasks -->
+                <div class="tasks p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Latest tasks</h2>
+                    <div class="task-row between-flex done">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Finish dashboard project</h3>
+                            <p class="c-gray fs-12"> I have to finish dashboard project before Thersday 26/3/2026</p>
+                        </div>
+                        <!-- ديليت احنا الي حاطينه من عندنا عشان فيما بعد ف الجافا سكربت او سي اس اس امسك العنصر ده من الكلاس ال انا عامله  -->
+                        <i class="  fa-solid fa-trash-can delete "></i>
+                    </div>
+                    <div class="task-row between-flex ">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Git/Github</h3>
+                            <p class="c-gray fs-12"> I have to finish Git/Github course before Sunday 28/3/2026</p>
+                        </div>
+                        <!-- ديليت احنا الي حاطينه من عندنا عشان فيما بعد ف الجافا سكربت او سي اس اس امسك العنصر ده من الكلاس ال انا عامله  -->
+                        <i class="  fa-solid fa-trash-can delete "></i>
+                    </div>
+                    <div class="task-row between-flex ">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">CV</h3>
+                            <p class="c-gray fs-12"> I have to rewrite my CV before Sunday 28/3/2026</p>
+                        </div>
+                        <!-- ديليت احنا الي حاطينه من عندنا عشان فيما بعد ف الجافا سكربت او سي اس اس امسك العنصر ده من الكلاس ال انا عامله  -->
+                        <i class="  fa-solid fa-trash-can delete "></i>
+                    </div>
+                </div>
+                <!-- End tasks -->
+                <!-- start last uploasd -->
+                <div class="Uploads p-20 bg-white rad-10 ">
+                    <h2 class="mt-0 mb-20 ">Last Updates</h2>
+                    <div class="file-row between-flex mb-10">
+                        <div class="uploaded-file d-flex alien-center ">
+                            <i class="fa-solid fa-file-pdf  mt-0 c-red"></i>
+                            <div class="txt ">
+                                <h5 class=" mt-0 mb-10">updates report.pdf</h5>
+                                <p class="fs-14  c-gray mt-0">IT department</p>
+                            </div>
+                        </div>
+                        <span class="p-r-l-10 p-t-b-5  bg-eee rad-6 fs-12">250KB</span>
+                    </div>
+                    <div class="file-row between-flex mb-10">
+                        <div class="uploaded-file d-flex alien-center ">
+                            <i class="fa-solid fa-file-word mt-0 c-blue"></i>
+                            <div class="txt ">
+                                <h5 class=" mt-0 mb-10">research.doc</h5>
+                                <p class="fs-14 c-gray mt-0">QC</p>
+                            </div>
+                        </div>
+                        <span class="p-r-l-10 p-t-b-5  bg-eee rad-6 fs-12">12MB</span>
+                    </div>
+                    <div class="file-row between-flex mb-10">
+                        <div class="uploaded-file d-flex alien-center ">
+                            <i class="fa-solid fa-file-powerpoint  mt-0 c-orange"></i>
+                            <div class="txt ">
+                                <h5 class=" mt-0 mb-10">flow chart.PPx</h5>
+                                <p class="fs-14 c-gray mt-0">Finance department</p>
+                            </div>
+                        </div>
+                        <span class="p-r-l-10 p-t-b-5  bg-eee rad-6 fs-12">36MB</span>
+                    </div>
+                    <div class="file-row between-flex mb-10">
+                        <div class="uploaded-file d-flex alien-center ">
+                            <i class="fa-solid fa-file-zipper c-green"></i>
+                            <div class="txt ">
+                                <h5 class=" mt-0 mb-10">All files.Zip</h5>
+                                <p class="fs-14 c-gray mt-0">Head Manager</p>
+                            </div>
+                        </div>
+                        <span class="p-r-l-10 p-t-b-5  bg-eee rad-6 fs-12">3GB</span>
+                    </div>
+                </div>
+                <!-- End last uploasd -->
+                <!-- Start last project status -->
+                <div class="last-project p-20 bg-white rad-10 po-rela ">
+                    <h2 class="mt-0 mb-20">Last Project</h2>
+                    <ul class="mt-0 po-rela">
+                        <li class="mt-20 d-flex alien-center done">Recive project from Projects department</li>
+                        <li class="mt-20 d-flex alien-center done">Planning the project with IT team </li>
+                        <li class="mt-20 d-flex alien-center done">In progress</li>
+                        <li class="mt-20 d-flex alien-center current">Testing all features</li>
+                        <li class="mt-20 d-flex alien-center ">Deliver project to client </li>
+                    </ul>
+                    <i class="fa-solid fa-rocket lanch-icon hide-mobile"></i>
+                </div>
+                <!-- End last project -->
+                <!-- Start Reminder -->
+                <div class="reminder bg-white p-20 rad-10">
+                    <h2 class="mt-0 mb-20">Reminder</h2>
+                    <ul class="p-10 d-flex flex-column just-left">
+                        <li class="one pl-30  fs-15 mb-10 po-rela fw-bold">Check my tasks list
+                            <p class="c-gray fs-12">Tuessday - 28/4/2026 </p>
+                        </li>
+                        <li class="two pl-30  fs-15 mb-10 po-rela fw-bold">Meeting
+                            <p class="c-gray fs-12">sunday - 13/5/2026 </p>
+                        </li>
+                        <li class="three pl-30  fs-15 mb-10 po-rela fw-bold">Go on vacation
+                            <p class="c-gray fs-12"> Saterday - 20/6/2026</p>
+                        </li>
+                        <li class="four pl-30  fs-15 mb-10 po-rela fw-bold">Start freelancing
+                            <p class="c-gray fs-12">June - 2026 </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Reminder -->
+                <!-- start social media -->
+                <div class="social bg-white p-20 rad-10">
+                    <h2 class="mt-0 mb-20">Social media accounts</h2>
+                    <div class="box Linkedin p-15 po-rela mb-10 between-flex">
+                        <i class="fa-brands fa-linkedin fa-2x bg-blue c-white h-100 center-flex"></i>
+                        <span>10K followers</span>
+                        <a class="btn-shape c-white fs-13"
+                            href="https://www.linkedin.com/in/abdelrahman-eisa-13b662325/" target="_blank">Follow me</a>
+                    </div>
+                    <div class="box github p-15 po-rela mb-10 between-flex">
+                        <i class="fa-brands fa-github fa-2x c-white bg-black h-100 center-flex"></i>
+                        <span>5K followers</span>
+                        <a class="btn-shape-no-bg c-white bg-gray fs-13"
+                            href="https://www.linkedin.com/in/abdelrahman-eisa-13b662325/" target="_blank">Follow me</a>
+                    </div>
+                </div>
+                <!-- End social media -->
+            </div>
+            <!-- End wrapper -->
+            <!-- Start projects tables -->
+            <div class="projects p-20 bg-white rad-10 m-20">
+                <h2 class="mt-0 mb-20">Projects Table</h2>
+                <div class="responsive">
+                    <table class="fs-15 w-full">
+                        <thead>
+                            <tr>
+                                <th>Project name</th>
+                                <th>Date line</th>
+                                <th>Team</th>
+                                <th>Client</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web page for resturant</td>
+                                <td>June 2027</td>
+                                <td>
+                                    <img src="./imgs/team-01.png">
+                                    <img src="./imgs/team-04.png">
+                                    <img src="./imgs/team-05.png">
+                                </td>
+                                <td>Al-Gamal advertising Group</td>
+                                <td class="status d-flex alien-center">
+                                    <i class="fa-solid fa-triangle-exclamation  mb-5 c-red"></i>
+                                    <span class="btn-shape-no-bg bg-red c-white">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Web page for Pharmacy</td>
+                                <td>April 2028</td>
+                                <td>
+                                    <img src="./imgs/team-01.png">
+                                    <img src="./imgs/team-04.png">
+                                </td>
+                                <td>Al-Gamal advertising Group</td>
+                                <td class="status d-flex alien-center">
+                                    <i class="fa-regular fa-circle-check   mb-5 c-green"></i>
+                                    <span class="btn-shape-no-bg bg-green c-white">Done</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Courses platform</td>
+                                <td>May 2026</td>
+                                <td>
+                                    <img src="./imgs/team-01.png">
+                                    <img src="./imgs/team-05.png">
+                                </td>
+                                <td>Al-Gamal advertising Group</td>
+                                <td class="status d-flex alien-center">
+                                    <i class="fa-solid fa-hourglass-half  mb-5 c-blue"></i>
+                                    <span class="btn-shape-no-bg bg-blue c-white">In progress</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End projects tables -->
+        </div>
+        <!-- End content -->
+    </div>
+</body>
+
+</html>
