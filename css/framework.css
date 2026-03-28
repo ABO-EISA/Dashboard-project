@@ -1,0 +1,325 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+/* start box */
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.just-left {
+    justify-content: flex-start;
+}
+
+.alien-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.d-block {
+    display: block;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-full {
+    height: 100vh;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+@media(max-width:767px) {
+
+    .hide-text,
+    .hide-mobile {
+        display: none;
+    }
+
+    .d-block-mobile {
+        display: block;
+    }
+}
+
+/* End box */
+
+/* Start padding+margin */
+.p-20 {
+    padding: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.p-t-b-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.p-r-l-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* End padding+margin */
+
+/* start color */
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.bg-orange {
+    background-color: var(--orange-color);
+}
+
+.bg-green {
+    background-color: var(--green-color);
+}
+
+.bg-blue {
+    background-color: var(--blue-color);
+}
+
+.bg-red {
+    background-color: var(--red-color);
+}
+
+.bg-gray {
+    background-color: var(--grey-color);
+}
+
+.bg-eee {
+    background-color: #eee;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-gray {
+    color: var(--grey-color);
+}
+
+.c-white {
+    color: white;
+}
+
+.c-orange {
+    color: var(--orange-color);
+}
+
+.c-red {
+    color: var(--red-color);
+}
+
+.c-blue {
+    color: var(--blue-color);
+}
+
+.c-green {
+    color: var(--green-color);
+}
+
+
+
+
+/* End colour */
+
+/* start position */
+.po-rela {
+    position: relative;
+}
+
+/*  position */
+
+/* start font*/
+@media(max-width:767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
+
+.txt-c {
+    text-align: center;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* End font*/
+/* Start border*/
+.bor-none {
+    border: none;
+}
+
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+/* End border*/
+
+/* Start button shape*/
+.btn-shape {
+    padding: 2px 5px;
+    border-radius: 6px;
+    background-color: var(--blue-color);
+    transition: 0.3s;
+}
+
+.btn-shape:hover {
+    background-color: var(--blue-alt-color);
+    cursor: pointer;
+
+}
+
+.btn-shape-no-bg {
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.btn-shape-no-bg:hover {
+    cursor: pointer;
+}
+
+
+/* End button shape*/
