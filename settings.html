@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/7e0c38e4b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="file d-flex ">
+        <!-- Start sidebar -->
+        <div class="sidebar bg-white p-20 po-rela mb-10">
+            <h3 class="mt-0 txt-c po-rela">ABO EISA</h3>
+            <ul>
+                <li>
+                    <a class=" d-flex alien-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-column fa-fw"></i>
+                        <span class="hide-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex alien-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gears fa-fw"></i>
+
+                        <span class="hide-text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex alien-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span class="hide-text">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex alien-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user-tie fa-fw"></i>
+                        <span class="hide-text">Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End sidebar -->
+        <!-- Start content -->
+        <div class="content mb-10">
+            <!-- Start head -->
+            <div class="head bg-wight p-20 between-flex">
+                <div class="search po-rela ">
+                    <input class="p-10 " type="search" placeholder="Search">
+                </div>
+                <div class="icons po-rela  d-flex alien-center ">
+                    <span class="notification po-rela ">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </span>
+                    <img src="./imgs/avatar.png">
+                </div>
+            </div>
+            <!-- End head -->
+            <h1 class="po-rela">Settings</h1>
+            <section class="settings m-20 d-grid gap-20">
+                <div class="setting-box bg-white p-20 rad-10">
+                    <h2 class="mt-0 mb-10"> Site control</h2>
+                    <p class="mt-0 fs-15 mt-0 mb-20 c-gray">General controls for website </p>
+                    <div class="wedgit-content mb-15 between-flex">
+                        <div>
+                            <span>Website control</span>
+                            <p class="c-gray mt-5 mb-0 fs-12">Open / close website</p>
+                        </div>
+                        <div>
+                            <label class="d-flex ">
+                                <input class="toggle-checkbox" type="checkbox" checked />
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End content -->
+    </div>
+</body>
+
+</html>
+
+<!-- hello world -->
+<!-- 
+                <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                </label> -->
