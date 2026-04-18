@@ -850,3 +850,83 @@ body:has(#toggle-checkbox:checked) {
 }
 
 /* End  setting page */
+
+/* Start project page */
+.projects {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media(max-width:767px) {
+    .projects {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.projects .project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.projects .project h4 {
+    font-weight: normal;
+}
+
+.projects .project .team {
+    position: relative;
+    min-height: 80px;
+    align-items: end;
+}
+
+.projects .project .team a:not(:first-child) {
+    margin-left: -10px;
+
+}
+
+.projects .project .team a img:hover {
+    z-index: 1000;
+    scale: 1.2;
+}
+
+.projects .project .team a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.projects .project .service {
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.projects .project .info {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.projects .project .progress {
+    position: relative;
+    height: 8px;
+    width: 80%;
+    border-radius: 6px;
+    border-top: 1px solid #eee;
+}
+
+.projects .project .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* End project page */
